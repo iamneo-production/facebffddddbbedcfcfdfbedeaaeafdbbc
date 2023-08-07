@@ -3,8 +3,7 @@ import Button from "./components/UI/Button/Button";
 import Card from "./components/UI/Card/Card";
 import Banner from "./components/UI/Banner/Banner";
 function App() {
-// State variables to control the start, attempt, question, card and result
-of the Quiz
+// State variables to control the start, attempt, question, card and resultof the Quiz
 const [start, setStart] = useState(true);
 const [attempt, correctAnswerMarkUpdate] = useState(0);
 const [qsnAttempt, setqsnAttempt] = useState(0);
@@ -24,9 +23,7 @@ const opt = {
 option1 : "Blue",option2 : "Red",option3 : "Yellow",option4 : "Green"
 }
 // Array of questions
-const questions = [ { question: "What color are the leaves?", answer: "Green" }, { question: "What color is the sky?", answer: "Blue" }, { question: "What color is a banana?", answer: "Yellow" }, { question: "What color
-is a strawberry?", answer: "Red" }, { question: "What color is a watermelon?
-", answer: "Green" } ];
+const questions = [ { question: "What color are the leaves?", answer: "Green" }, { question: "What color is the sky?", answer: "Blue" }, { question: "What color is a banana?", answer: "Yellow" }, { question: "What coloris a strawberry?", answer: "Red" }, { question: "What color is a watermelon?", answer: "Green" } ];
 // Event handler to show the result of the Quiz
 const handleResult = () => {
 setStart(true)
@@ -54,6 +51,6 @@ setQsns={setqsnAttempt} qsn={ qsnAttempt} setCard={setResult} qsnAttempt={qsnAtt
 }
 </div>
 </div>
-)
+);
 }
 export default App;
