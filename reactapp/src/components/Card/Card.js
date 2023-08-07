@@ -3,8 +3,8 @@ import Button from "../Button/Button";
 const Card = ({ question, correctAnswerMarkUpdate, attempt, options, answer ,
 setQsns,qsn ,setCard,qsnAttempt}) => {
 // Creating an array of options
-const optionsArray = [options.option1, options.option2, options.option3, o
-ptions.option4];
+const optionsArray = [options.option1, options.option2, options.option3,
+options.option4];
 // State variable to track the marked status of the button
 const [marked, setMarked] = useState(false);
 // Event handler to handle the click event on the options
@@ -29,7 +29,9 @@ return (
 <h4 className="pt-3 pb-1">{question}</h4>
 <div className="flex space-x-2">
 {optionsArray.map((option, index) =>
-<Button key={index} marked={marked} onClick={() => click(optio
-n)} style={!marked ? norm : disable} >{ option }</Button>)}
+<Button key={index} marked={marked} onClick={() => click(option)} style={!marked ? norm : disable} >{ option }</Button>)}
 </div>
 </div>
+)
+}
+export default Card;
